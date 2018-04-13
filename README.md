@@ -3,7 +3,7 @@ A simple class to encrypt and decrypt strings with a given salt (bijective).
 
 ## Basic Usage
 
-Instantiate the Obfuscator
+Instantiate the Obfuscator.
 ```php
 <?php
 
