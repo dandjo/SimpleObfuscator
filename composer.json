@@ -1,6 +1,6 @@
 {
     "name": "dandjo/simple-obfuscator",
-    "description": "A simple class to encrypt and decrypt strings via a given salt (bijective).",
+    "description": "A simple class to encrypt and decrypt strings with a given salt (bijective).",
     "type": "library",
     "keywords": ["obfuscator", "encrypt", "decrypt", "enrypting", "decrypting", "reversible"],
     "require": {
