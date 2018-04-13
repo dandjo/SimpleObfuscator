@@ -14,6 +14,6 @@ $obfuscator = new \SimpleObfuscator\SimpleObfuscator('my-securty-by-obscurity');
 Then you can encrypt your string and decrypt the generated hex string.
 
 ```php
-$encrypted = $obfuscator->encode('4711-foobar'); // $encrypted == "6f927ea5a49b7c"
-$decrypted = $obfuscator->decode('6f927ea5a49b7c'); // $decrypted === "4711-foobar"
+$encrypted = $obfuscator->encrypt('4711-foobar'); // $encrypted == "6f927ea5a49b7c"
+$decrypted = $obfuscator->decrypt('6f927ea5a49b7c'); // $decrypted === "4711-foobar"
 ```
