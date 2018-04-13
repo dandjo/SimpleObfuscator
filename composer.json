@@ -1,0 +1,19 @@
+{
+    "name": "dandjo/simple-obfuscator",
+    "description": "A simple class to encrypt and decrypt strings via a given salt (bijective).",
+    "type": "library",
+    "keywords": ["obfuscator", "encrypt", "decrypt", "enrypting", "decrypting", "reversible"],
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Pernold",
+            "email": "daniel.pernold@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "SimpleObfuscator": "src/" }
+    }
+}
