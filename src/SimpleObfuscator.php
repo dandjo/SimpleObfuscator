@@ -1,6 +1,6 @@
 <?php
 
-namespace Dandjo;
+namespace Dandjo\SimpleObfuscator;
 
 /**
  * Class SimpleObfuscator.
