@@ -8,7 +8,7 @@ Instantiate the Obfuscator.
 <?php
 
 // create a new instance
-$obfuscator = new \Dandjo\SimpleObfuscator\SimpleObfuscator('my-securty-by-obscurity');
+$obfuscator = new \Dandjo\SimpleObfuscator\SimpleObfuscator('my-security-by-obscurity');
 ```
 
 Then you can encrypt your string and decrypt the generated hex string.
