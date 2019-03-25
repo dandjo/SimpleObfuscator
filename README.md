@@ -1,12 +1,15 @@
-# SimpleObfuscator
+# Simple Obfuscator
 A simple class to encrypt and decrypt strings with a given salt (bijective).
 
-## Basic Usage
+## Installation
+
+    composer require dandjo/simple-obfuscator
+
+## Usage
 
 Instantiate the Obfuscator.
-```php
-<?php
 
+```php
 // create a new instance
 $obfuscator = new \Dandjo\SimpleObfuscator\SimpleObfuscator('my-security-by-obscurity');
 ```
