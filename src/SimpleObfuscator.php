@@ -7,7 +7,8 @@ namespace Dandjo\SimpleObfuscator;
  * Encryps and decrypts strings with given salt. Uses hexadecimal representation
  * of the calculated binary string.
  */
-class SimpleObfuscator {
+class SimpleObfuscator
+{
 
     /**
      * @var string
@@ -18,7 +19,8 @@ class SimpleObfuscator {
      * SimpleObfuscator constructor.
      * @param $salt
      */
-    public function __construct($salt) {
+    public function __construct($salt)
+    {
         $this->salt = $salt;
     }
 
@@ -26,7 +28,8 @@ class SimpleObfuscator {
      * @param $string
      * @return string
      */
-    function decrypt($string) {
+    function decrypt($string)
+    {
         $result = '';
         foreach (str_split(hex2bin($string)) as $i => $char) {
             $saltChar = substr($this->salt, ($i % strlen($this->salt)) - 1, 1);
@@ -39,7 +42,8 @@ class SimpleObfuscator {
      * @param $string
      * @return string
      */
-    function encrypt($string) {
+    function encrypt($string)
+    {
         $result = '';
         foreach (str_split($string) as $i => $char) {
             $saltChar = substr($this->salt, ($i % strlen($this->salt)) - 1, 1);

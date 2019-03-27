@@ -11,12 +11,13 @@ Instantiate the Obfuscator.
 
 ```php
 // create a new instance
-$obfuscator = new \Dandjo\SimpleObfuscator\SimpleObfuscator('my-security-by-obscurity');
+$salt = 'my-security-by-obscurity';
+$obfuscator = new \Dandjo\SimpleObfuscator\SimpleObfuscator($salt);
 ```
 
 Then you can encrypt your string and decrypt the generated hex string.
 
 ```php
-$encrypted = $obfuscator->encrypt('4711-foobar'); // $encrypted == "6f927ea5a49b7c"
-$decrypted = $obfuscator->decrypt('6f927ea5a49b7c'); // $decrypted === "4711-foobar"
+$encrypted = $obfuscator->encrypt('4711-foobar');  // $encrypted == "6f927ea5a49b7c"
+$decrypted = $obfuscator->decrypt('6f927ea5a49b7c');  // $decrypted === "4711-foobar"
 ```
